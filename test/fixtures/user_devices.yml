@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: one
+  provider: MyString
+  device_id: MyString
+  device_hash: MyString
+  arn: MyString
+  arn_subscription: MyString
+  original_json: MyText
+
+two:
+  user: two
+  provider: MyString
+  device_id: MyString
+  device_hash: MyString
+  arn: MyString
+  arn_subscription: MyString
+  original_json: MyText

@@ -1,0 +1,1 @@
+export API_URI = 'https://lindaapp.herokuapp.com/';

@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  robot_type: MyString
+  apikey: MyString
+  service_url: MyString
+  version: MyString
+
+two:
+  robot_type: MyString
+  apikey: MyString
+  service_url: MyString
+  version: MyString

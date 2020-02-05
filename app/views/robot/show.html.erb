@@ -1,0 +1,33 @@
+<div class='row'>
+    <div class='col s12'>
+        <div class='card'>
+            <div class='card-content'>
+                <div class='row'>
+                    <%= simple_form_for @robot, url: robot_path do |f| %>
+                        <%= f.input :robot_type, label: 'Tipo de Robô', wrapper_html: { class: 'input-field col s4 m2' } %>
+                        <%= f.input :apikey, label: 'API KEY', wrapper_html: { class: 'input-field col s8 m4' } %>
+                        <%= f.input :service_url, label: 'URL do Serviço', wrapper_html: { class: 'input-field col s8 m4' } %>
+                        <%= f.input :version, label: 'Versão', wrapper_html: { class: 'input-field col s4 m2' } %>
+                        <div class='row'>
+                            <%= f.input :skill_name, label: 'Nome da Skill', wrapper_html: { class: 'input-field col s6' } %>
+                            <%= f.input :skill_id, label: 'ID da Skill', wrapper_html: { class: 'input-field col s6' } %>
+                        </div>
+
+                        <div class='row'>
+                            <%= f.input :assistant_name, label: 'Nome do Assistente', wrapper_html: { class: 'input-field col s12 m4' } %>
+                            <%= f.input :assistant_id, label: 'ID do Assistente', wrapper_html: { class: 'input-field col s12 m4' } %>
+                            <%= f.input :assistant_url, label: 'URL do Assistente', wrapper_html: { class: 'input-field col s12 m4' } %>
+                        </div>
+
+                        <div class='row'>
+                            <div class='col s12'>
+                                <%= f.button :submit, 'Atualizar', class: 'input-field col s4 btn'  %>
+                            </div>
+                        </div>
+
+                    <% end %>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

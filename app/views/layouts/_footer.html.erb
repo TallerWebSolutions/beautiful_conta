@@ -1,0 +1,8 @@
+</main>
+<% flash.each do |name, msg| %>
+    <script type="text/javascript">
+       $(function(){M.toast({html: "<%= msg %>", classes: 'rounded'}) });
+      </script>
+  <% end %>
+</body>
+</html>

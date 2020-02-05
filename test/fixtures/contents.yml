@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  description: MyText
+  action: MyString
+  arguments: MyString
+  video_uri: MyString
+  status: MyString
+  publish_date: 2020-01-26
+
+two:
+  title: MyString
+  description: MyText
+  action: MyString
+  arguments: MyString
+  video_uri: MyString
+  status: MyString
+  publish_date: 2020-01-26

@@ -1,0 +1,18 @@
+</main>
+<% flash.each do |name, msg| %>
+    <script type="text/javascript">
+       $(function(){M.toast({html: "<%= msg %>", classes: 'rounded'}) });
+      </script>
+  <% end %>
+
+     <script type="text/javascript">
+    $(document).ready(function(){
+      $('.menu-mobile-button').on('click', function(event){
+        event.preventDefault();
+        $('.main-header > nav > ul').toggleClass('active');
+      })
+
+    })
+    </script>
+</body>
+</html>

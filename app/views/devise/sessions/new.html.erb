@@ -1,0 +1,56 @@
+<div class='session-new'>
+    <div class="mascote-login">
+      <%= image_tag asset_path('linda-posicao-b.png') %>
+    </div>
+    <div class="row">
+      <div class="container">
+        <div class="row">&nbsp;</div>
+        <div class="login-block col s12 m6 offset-m6">
+          <div class="card">
+            <div class="row">
+              <div class="col s12">
+                <div class="card-content">
+                  <div class="row">
+                  <div class="col s12">
+                    <div class="card-title">Entrar</div>
+                    <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+                      <div class="row">
+                        <%= f.input :email_or_phone, 
+                                    label: "E-mail ou telefone",
+                                    placeholder: "Digite seu e-mail ou seu telefone",
+                                    as: :string, 
+                                    required: false, 
+                                    autofocus: true, 
+                                    wrapper_html: { class: 'col s12'} 
+                        %>
+                        <%= f.input :password,
+                                    label: "Senha",
+                                    placeholder: 'Digite sua senha',
+                                    required: false,
+                                    input_html: { autocomplete: "current-password" },
+                                    wrapper_html: { class: 'col s12'}
+                        %>
+                        <% if devise_mapping.rememberable? -%>
+                          <div class="col s12 l10">
+                            <%= f.label :remember_me do %>
+                              <%= f.check_box :remember_me %>
+                              <span>Manter conectado</span>
+                            <% end %>
+                          </div>
+                        <% end -%>
+                      </div>
+
+                      <div class="form-actions">
+                        <%= f.button :submit, "Entrar", class: 'btn btn-primary' %>
+                      </div>
+                    <% end %>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>
